@@ -29,18 +29,18 @@ Map.centerObject(geometry, 6);
 var BKK = maskL8sr(ee.Image('LANDSAT/LC08/C02/T1_L2/LC08_129050_20200219'));
 var STG = maskL8sr(ee.Image('LANDSAT/LC08/C02/T1_L2/LC08_125053_20200223'));
   
-var MBI = function(image){
-var mbi = image.expression(
-      '(swir1 - swir2 - nir)/(swir1 + swir2 + nir) + 0.5',{
-          swir1: image.select('SR_B6'),
-          swir2: image.select('SR_B7'),
-          nir:   image.select('SR_B5'),
-      }).rename('MBI')
-      return mbi.set('system:time_start', image.get('system:time_start'))
+var MBI_calculation = function(image){
+    var MBI = image.expression(
+      '(SWIR1 - SWIR2 - NIR)/(SWIR1 + SWIR2 + NIR) + 0.5',{
+          SWIR1: image.select('SR_B6'),
+          SWIR2: image.select('SR_B7'),
+          NIR:   image.select('SR_B5'),
+    }).rename('MBI')
+    return MBI.set('system:time_start', image.get('system:time_start'))
 }
   
-var MBI_BKK = MBI(BKK);
-var MBI_STG = MBI(STG);
+var MBI_BKK = MBI_calculation(BKK);
+var MBI_STG = MBI_calculation(STG);
   
 ///////////////////////////////////////////////////////////////////////////////
 var palettes = require('users/gena/packages:palettes');
