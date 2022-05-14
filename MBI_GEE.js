@@ -1,6 +1,6 @@
 /* 
 This is GEE code to implement Modified Bare soil Index (MBI).
-Please kindly cite this paper when you it.
+Please kindly cite this paper when you use it.
 Nguyen, C. T., Chidthaisong, A., Diem, P. K., & Huo, L. (2021). A Modified Bare Soil Index to Identify Bare Land Features during Agricultural Fallow-Period in Southeast Asia Using Landsat 8. Land, 10, 1–17. 
 */
 
