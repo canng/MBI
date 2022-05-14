@@ -1,3 +1,9 @@
+/* 
+This is GEE code to implement Modified Bare soil Index (MBI).
+Please kindly cite this paper when you it.
+Nguyen, C. T., Chidthaisong, A., Diem, P. K., & Huo, L. (2021). A Modified Bare Soil Index to Identify Bare Land Features during Agricultural Fallow-Period in Southeast Asia Using Landsat 8. Land, 10, 1–17. 
+*/
+
 // This example demonstrates the use of the Landsat 8 Collection 2, Level 2
 // QA_PIXEL band (CFMask) to mask unwanted pixels.
 function maskL8sr(image) {
