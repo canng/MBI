@@ -4,7 +4,7 @@
 A modified bare soil index (MBI) was introduced to highlight bare soil features using shortwave infrared (SWIR) and near-infrared (NIR) wavelengths derived from Landsat surface reflectance.
 
 MBI value ranges from −0.5 to + 1.5, in which bare soil is emphasized and received positive values until maxima.
-
+<br>
 <img src="/file/equation.gif"/>
 
 
