@@ -1,4 +1,7 @@
 ## Modified Bare soil Index (MBI)
+
+[![DOI](https://zenodo.org/badge/492116155.svg)](https://doi.org/10.5281/zenodo.6570076)
+
 <hr>
 
 A modified bare soil index (MBI) was introduced to highlight bare soil features using shortwave infrared (SWIR) and near-infrared (NIR) wavelengths derived from Landsat surface reflectance.
